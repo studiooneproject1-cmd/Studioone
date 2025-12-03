@@ -7,7 +7,7 @@ const handleI18nRouting = createMiddleware(routing);
 
 const protectedRoutes = ["/admin/dashboard"];
 const adminRoutes = ["/admin/dashboard"];
-const authRoutes = ["/admin/login", "/admin/register"];
+const authRoutes = ["/login", "/register"];
 
 export async function middleware(req: NextRequest) {
   const i18nResponse = handleI18nRouting(req);
