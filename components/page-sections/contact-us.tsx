@@ -11,11 +11,37 @@ export default function ContactUs() {
   return (
     <div>
       <Section image={Image3.src} className="h-screen">
-        <div className='flex flex-col items-center w-[70%] text-center'>
-          <h1 className="text-[#e1b261] text-2xl our-services-header">{t("sectionTitle")}</h1>
-          <h2 className="text-white text-[5rem] leading-24 our-services-header">{t("sectionSubtitle")}</h2>
+        <div
+          className="
+            flex flex-col items-center text-center
+            w-[90%] sm:w-[80%] md:w-[70%]
+          "
+        >
+          <h1
+            className="
+              text-[#e1b261]
+              text-xl sm:text-2xl
+              our-services-header
+            "
+          >
+            {t("sectionTitle")}
+          </h1>
+
+          <h2
+            className="
+              text-white
+              text-[2.5rem] sm:text-[4rem] md:text-[5rem]
+              leading-12 sm:leading-18 md:leading-22
+              our-services-header
+            "
+          >
+            {t("sectionSubtitle")}
+          </h2>
+
           <Link href={"/contact"}>
-          <ArrowButton>{t("buttonText")}</ArrowButton>
+            <ArrowButton>
+              {t("buttonText")}
+            </ArrowButton>
           </Link>
         </div>
       </Section>
