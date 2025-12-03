@@ -16,7 +16,7 @@ interface PageProps {
 export const metadata = PAGE_METADATA.projects;
 
 export default async function ProjectsPage({ params }: PageProps) {
-  const { locale } = params;
+  const { locale } =await params;
   const t = await getTranslations("header");
   const rawProjects = await getProjectsByLocale(locale);
   const categories = formatCategories(rawProjects, locale);

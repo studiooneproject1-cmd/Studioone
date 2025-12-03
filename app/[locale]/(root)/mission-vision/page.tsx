@@ -14,7 +14,7 @@ interface PageProps {
 export const metadata = PAGE_METADATA.mission;
 
 export default async function MissionVisionPage({ params }: PageProps) {
-  const { locale } = params;
+  const { locale } =await params;
   const t = await getTranslations("header");
   const vision = await getPostByLocale("our vision", locale);
   const mission = await getPostByLocale("our mission", locale);

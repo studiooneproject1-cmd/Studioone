@@ -28,7 +28,7 @@ export const generateMetadata = () => {
 };
 
 export default async function Page({ params }: PageProps) {
-  const { locale } = params;
+  const { locale } =await params;
   const Sliderdata = await getSlidersByLocale(locale);
   const ServicesData = await getServicesByLocale(locale);
   const vision = await getPostByLocale("our vision", locale);

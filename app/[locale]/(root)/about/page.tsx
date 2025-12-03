@@ -17,7 +17,7 @@ interface PageProps {
 export const metadata = PAGE_METADATA.about;
 
 export default async function page({ params }: PageProps) {
-  const { locale } = params;
+  const { locale } =await params;
   const t = await getTranslations("header");
   const about = await getPostByLocale("about us", locale);
   const clientsData = await getClientsByLocale(locale);
