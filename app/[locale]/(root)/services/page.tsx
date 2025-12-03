@@ -17,10 +17,10 @@ interface PageProps {
 export const metadata = PAGE_METADATA.services;
 
 export default async function ServicesPage({ params }: PageProps) {
-  const { locale } =await params;
+  const { locale } = await params;
   const t = await getTranslations("header");
   const ServicesData = await getServicesByLocale(locale);
-
+  /** */
   return (
     <div>
       <Header
