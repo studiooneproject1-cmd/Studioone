@@ -14,7 +14,7 @@ import ToggleIcon from "@/components/toggleicon";
 gsap.registerPlugin(ScrollTrigger);
 
 interface NavLink {
-  key: string; // مفتاح الترجمة
+  key: string;
   href: string;
 }
 
@@ -40,6 +40,7 @@ const Header: React.FC = () => {
     const handleScroll = () => {
       const currentScroll = window.scrollY;
 
+      // Background transition
       if (currentScroll > 10) {
         gsap.to(header, {
           backgroundColor: "#212529",
@@ -54,6 +55,7 @@ const Header: React.FC = () => {
         });
       }
 
+      // Hide on scroll down / show on scroll up
       if (currentScroll > prevScroll && currentScroll > 100) {
         gsap.to(header, { y: "-100%", duration: 0.5, ease: "power2.out" });
       } else if (currentScroll < prevScroll) {
@@ -74,18 +76,25 @@ const Header: React.FC = () => {
       style={{ backgroundColor: "rgba(75,85,99,0)" }}
     >
       <nav className="max-w-7xl mx-auto px-6 md:px-16 py-5 flex justify-between items-center">
-        <Link href="/">
+
+        {/* LOGO – responsive + protected from shrinking */}
+        <Link href="/" className="shrink-0 z-50">
           <Image
             src={WhiteLogo}
             alt="WhiteLogo"
             width={180}
             height={50}
             priority
+            className="w-[130px] sm:w-[150px] md:w-[180px] shrink-0"
           />
         </Link>
-        <div className=" md:hidden block">
-        <ToggleIcon  />
+
+        {/* BURGER ICON – always visible on mobile */}
+        <div className="md:hidden block z-50 shrink-0">
+          <ToggleIcon />
         </div>
+
+        {/* DESKTOP NAV */}
         <ul className="md:flex md:items-center md:gap-6 hidden">
           {navLinks.map((link) => (
             <li key={link.href}>
