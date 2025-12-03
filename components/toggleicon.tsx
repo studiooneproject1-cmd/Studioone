@@ -40,7 +40,7 @@ export default function SlideSidebar() {
 
       {/* Sidebar */}
       <aside
-        className={`fixed top-26 ${positionClass} h-[30vh] w-full bg-[#212529] backdrop-blur-md shadow-xl z-40
+        className={`fixed top-26 ${positionClass} h-auto w-full bg-[#212529] backdrop-blur-md shadow-xl z-40
         px-6 py-4 flex flex-col justify-center items-center gap-6 text-lg
         transform transition-transform duration-300
         ${translateClass}`}
