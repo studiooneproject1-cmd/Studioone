@@ -1,0 +1,135 @@
+{
+  "Navbar": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "missionvision": "Mission & Vision",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+
+  "footer": {
+    "ctaText": "Start Your Customer Journey With Us.",
+    "contactUs": "Contact Us",
+    "quickLinks": "Quick Links",
+    "links": {
+      "home": "Home",
+      "about": "About",
+      "projects": "Projects",
+      "contact": "Contact",
+      "services": "Services",
+      "missionVision": "Mission & Vision"
+    },
+    "contactInfo": "Contact Info",
+    "email": "info@Studioonejo.com",
+    "phone1": "00962799773512",
+    "phone2": "00962799742085",
+    "address": "Amman, Wasfi Al-Tal St. Maraqa Spaces Complex No. 335, 1st Floor, Office No.2",
+    "rights": "All rights reserved."
+  },
+
+  "process": {
+    "sectionTitle": "Our Process",
+    "sectionSubtitle": "Discover how we work for you",
+    "steps": {
+      "1": {
+        "title": "Consultation & Discovery",
+        "text": "We start by understanding your needs, preferences, budget, and personal style. Through in-depth discussions, we gather insights about your vision, space requirements, and design aspirations."
+      },
+      "2": {
+        "title": "Concept Development",
+        "text": "Our team creates initial design concepts including mood boards, sketches, and 3D visualizations to help you envision your space transformation. We focus on blending functionality with aesthetics while incorporating your personal style."
+      },
+      "3": {
+        "title": "Design Refinement",
+        "text": "Based on your feedback, we refine the design to ensure every element meets your expectations. This phase includes material selection, color palettes, furniture layout, and technical plans."
+      },
+      "4": {
+        "title": "Project Planning & Budgeting",
+        "text": "We provide a detailed project schedule and cost estimate to ensure transparency and efficiency. Our team carefully plans the execution process, coordinating all aspects to maintain quality and budget compliance."
+      },
+      "5": {
+        "title": "Implementation & Execution",
+        "text": "With a hands-on approach, we supervise the entire execution process, collaborating with skilled craftsmen, subcontractors, and suppliers to bring the design to life. We ensure accuracy and quality while meeting deadlines."
+      },
+      "6": {
+        "title": "Final Touches & Handover",
+        "text": "As the project nears completion, we add final touches to enhance the overall look and feel of the space. A final walkthrough ensures every detail is perfected before handing over the finished space to you."
+      },
+      "7": {
+        "title": "Post-Completion Support",
+        "text": "Our commitment does not end with project completion. We provide post-installation support to ensure the space continues to meet your expectations."
+      }
+    }
+  },
+
+  "contactUs": {
+    "sectionTitle": "Contact Us",
+    "sectionSubtitle": "Start Your Customer Journey With Us.",
+    "buttonText": "Get Started"
+  },
+    "ServicesCard": {
+    "readMore": "Read More"
+  },
+  "whatsNewSection": {
+  "title": "What's New",
+  "subtitle": "Recent Work We Have Done"
+},
+ "ourClients": {
+    "title": "Our Clients",
+    "subtitle": "We have worked with a wide range of clients, from residential to commercial projects."
+  },
+   "ourServices": {
+    "title": "Services",
+    "subtitle": "We provide the best engineering office services."
+  },
+   "CategoriesSection": {
+    "title": "Projects",
+    "subtitle": "Recent Work We Have Done",
+    "noProjects": "No projects available.",
+    "noCategoryProjects": "No projects in this category.",
+    "readMore": "Read More"
+  },
+    "header": {
+    "aboutUsTitle": "About Us",
+    "aboutUsDescription": "We provide the best engineering office services.",
+     "home": "Home",
+       "servicesTitle": "Services",
+  "servicesDescription": "We provide the best engineering office services.",
+    "missionVisionTitle": "Mission & Vision",
+  "missionVisionDescription": "We provide the best engineering office services.",
+    "projectsTitle": "What's New",
+  "projectsDescription": "Recent Work We Have Done",
+   "contactTitle": "Contact Us",
+  "contactDescription": "Start Your Customer Journey With Us.",
+  "projects":"Projects",
+  "project":"Project",
+  "services":"Services",
+  "categories":"Categories"
+  },
+"contacts": {
+  "sectionTitle": "Contact Us",
+  "sectionSubtitle": "Start Your Customer Journey With Us.",
+  "buttonText": "Get Started",
+  "locationTitle": "Location :",
+  "locationText": "Amman Wasfi Al-Tal St. Maraqa Spaces Complex No. 335 1st Floor Office No.2",
+  "onlineChannelsTitle": "Online Channels",
+  "onlineChannelsText": "info@studioonejo.com",
+  "phoneTitle": "Phone :",
+  "phoneText": "00962799773512\n00962799742085"
+},
+"contactForm":{
+  "imageAlt": "Contact",
+  "title": "Contact Us",
+  "firstName": "First Name",
+  "lastName": "Last Name",
+  "phone": "Phone Number",
+  "email": "Email Address",
+  "message": "Message",
+  "send": "Send"
+}
+
+  
+  
+  
+}

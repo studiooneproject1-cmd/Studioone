@@ -1,0 +1,13 @@
+# *
+User-agent: *
+Allow: /
+
+# *
+User-agent: *
+Disallow: /admin/
+
+# Host
+Host: https://www.studioonejo.com
+
+# Sitemaps
+Sitemap: https://www.studioonejo.com/sitemap.xml
