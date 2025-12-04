@@ -12,11 +12,11 @@ interface AboutProps {
 export default function AboutUs({ about }: AboutProps) {
   return (
     <div>
-      <Section image={Image2.src} className="py-24 px-8 md:px-32">
-        <div className="h-full w-full flex flex-col md:flex-row items-center md:items-start justify-center gap-8 md:gap-14">
+      <Section image={Image2.src} className="py-12 px-4 md:py-24 md:px-32">
+        <div className="h-full w-full flex flex-col md:flex-row items-center md:items-start justify-center gap-8 md:gap-14 overflow-hidden">
 
           {/* صورة */}
-          <section className="w-full md:w-[40%] h-[40vh] md:h-[60vh] relative">
+          <section className="w-full md:w-[40%] h-[40vh] md:h-[60vh] relative min-h-[200px]">
             {about?.image ? (
               <Image
                 src={about.image}
