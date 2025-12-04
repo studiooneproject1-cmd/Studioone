@@ -3,37 +3,20 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import type {clientsData}from "@/types/index"
+import type { clientsData } from "@/types/index";
 import Image from "next/image";
-
-
 
 interface OurClientsProps {
   clientsData: clientsData[];
 }
 
-
-
-
-
-
-
-
-
-
-export default function Clients({clientsData}: OurClientsProps) {
-   
-console.log(clientsData)
-
+export default function Clients({ clientsData }: OurClientsProps) {
   return (
-    <section >
-
-
-      <div className="max-w-5xl mx-auto">
+    <section className="w-full">
+      <div className="w-full mx-auto">
         <Swiper
           spaceBetween={20}
-          slidesPerView={7}
-          loop={true}
+          loop={clientsData.length > 1} 
           breakpoints={{
             1280: { slidesPerView: 7 },
             1024: { slidesPerView: 6 },
@@ -43,11 +26,16 @@ console.log(clientsData)
           }}
         >
           {clientsData.map((client, idx) => (
-            
-            <SwiperSlide key={idx}>
-              <div className="h-28 flex items-center justify-center   rounded-xl text-lg font-medium shadow">
-                <Image src={client.image} alt={client.name} width={90} height={90}></Image>
-                
+            <SwiperSlide key={idx} className="flex justify-center items-center">
+              <div className="flex justify-center items-center w-24 sm:w-28 md:w-32 h-24 sm:h-28 md:h-32">
+                <Image
+                  src={client.image}
+                  alt={client.name}
+                  width={200} 
+                  height={200}
+                  className="object-contain w-full h-full" 
+                  unoptimized={true}
+                />
               </div>
             </SwiperSlide>
           ))}
