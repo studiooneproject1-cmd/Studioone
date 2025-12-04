@@ -127,8 +127,12 @@
   "email": "Email Address",
   "message": "Message",
   "send": "Send"
-}
-
+},
+  "thankYou": {
+    "title": "Thank you for contacting us!",
+    "message": "We will get back to you shortly.",
+    "backButton": "Go To Home"
+  }
   
   
   
