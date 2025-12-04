@@ -53,7 +53,7 @@ export default function DeleteButton({
         <DialogHeader>
           <DialogTitle>Confirm Delete</DialogTitle>
           <DialogDescription>
-            Are you sure you want to delete this user?
+            Are you sure you want to delete this field?
           </DialogDescription>
         </DialogHeader>
         <div className="mt-4 flex justify-end gap-2">
