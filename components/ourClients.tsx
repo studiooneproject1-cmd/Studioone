@@ -22,8 +22,8 @@ export default function Clients({ clientsData }: OurClientsProps) {
             1280: { slidesPerView: 7 },
             1024: { slidesPerView: 6 },
             768: { slidesPerView: 4 },
-            480: { slidesPerView: 3 }, // شاشة صغيرة
-            0: { slidesPerView: 3 },   // أصغر شاشة
+            480: { slidesPerView: 3 }, 
+            0: { slidesPerView: 3 },   
           }}
         >
           {clientsData.map((client, idx) => (
