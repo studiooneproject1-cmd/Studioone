@@ -52,7 +52,7 @@ const Login = () => {
     // SUCCESS
     if (valid?.ok === true) {
       toast.success("Logged in successfully!");
-      router.push("/");
+      router.push("/admin/dashboard");
       return;
     }
 
@@ -66,7 +66,6 @@ const Login = () => {
 
   return (
     <main className="flex min-h-screen">
-      
       {/* LEFT SIDE */}
       <div className="w-1/2 flex items-center justify-center bg-gray-50">
         <form
@@ -74,10 +73,12 @@ const Login = () => {
           onSubmit={onSubmit}
           dir="ltr"
         >
-
           {/* EMAIL */}
           <div className="mb-5">
-            <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900">
+            <label
+              htmlFor="email"
+              className="block mb-2 text-sm font-medium text-gray-900"
+            >
               Email
             </label>
             <input
@@ -93,7 +94,10 @@ const Login = () => {
 
           {/* PASSWORD */}
           <div className="mb-5">
-            <label htmlFor="password" className="block mb-2 text-sm font-medium text-gray-900">
+            <label
+              htmlFor="password"
+              className="block mb-2 text-sm font-medium text-gray-900"
+            >
               Password
             </label>
 
