@@ -1,6 +1,7 @@
 "use client";
 import { usePathname, useRouter } from "next/navigation";
 import Image from "next/image";
+import Logout from "./logout-button";
 import {
   Sidebar,
   SidebarContent,
@@ -64,6 +65,9 @@ export function AppSidebar() {
                   </SidebarMenuItem>
                 );
               })}
+              <div className="mt-10">
+               <Logout/>
+               </div>
             </SidebarMenu>
           </SidebarGroupContent>
         </SidebarGroup>
