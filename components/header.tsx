@@ -70,11 +70,11 @@ const Header: React.FC = () => {
   }, [prevScroll]);
 
   return (
-    <header
-      ref={headerRef}
-      className="fixed top-0 left-0 w-full z-50 transition-colors"
-      style={{ backgroundColor: "rgba(75,85,99,0)" }}
-    >
+   <header
+  ref={headerRef}
+  className="fixed top-0 left-0 w-full z-[9999] transition-colors"
+  style={{ backgroundColor: "rgba(75,85,99,0)" }}
+>
       <nav className="max-w-7xl mx-auto px-6 md:px-16 py-5 flex justify-between items-center">
 
         {/* LOGO – responsive + protected from shrinking */}

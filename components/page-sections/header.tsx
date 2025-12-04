@@ -13,10 +13,11 @@ interface HeaderProps {
 export default function Header({ title, description, link, homeText }: HeaderProps) {
   return (
     <div>
-      <Section
-        image={Image1.src}
-        className="flex items-center justify-center md:p-28    px-8 py-28"
-      >
+   <Section
+  image={Image1.src}
+  className="flex items-center justify-center md:p-28 px-8 py-28 relative z-[1]"
+>
+
         <div className="text-white text-center flex flex-col items-center max-w-lg">
           <h1 className="text-5xl font-bold mb-4 our-services-header">{title}</h1>
 
