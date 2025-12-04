@@ -1,7 +1,15 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
+import type {categoryWithProject}from "@/types/index"
 
-export default function ProjectCircle() {
+
+interface ProjectCardProps {
+  project: categoryWithProject;
+
+}
+
+
+export default function ProjectCircle({project}: ProjectCardProps ) {
   return (
     <div
       className="
@@ -15,7 +23,7 @@ export default function ProjectCircle() {
         text-white text-xl sm:text-2xl md:text-3xl
         font-bold mb-2 transition-colors duration-300
       ">
-        project
+        {project.project_title}
       </span>
 
       <span className="
