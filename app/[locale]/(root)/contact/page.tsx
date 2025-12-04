@@ -17,7 +17,7 @@ interface PageProps {
 export const metadata = PAGE_METADATA.contact;
 
 export default async function ContactPage({ params }: PageProps) {
-  const { locale } =await params;
+  
   const t = await getTranslations("header");
 
   return (

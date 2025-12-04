@@ -15,7 +15,7 @@ interface PageProps {
 }
 
 export async function generateMetadata({ params }: PageProps) {
-  const { locale, id } = params;
+  const { locale, id } = await params;
   const project = await getProjectByIdByLocale(id, locale);
   if (!project || !project.project_id) return {};
 
@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: PageProps) {
 }
 
 export default async function page({ params }: PageProps) {
-  const { locale, id } = params;
+  const { locale, id } = await params;
   const t = await getTranslations("header");
   const project = await getProjectByIdByLocale(id, locale);
 

@@ -15,7 +15,7 @@ interface PageProps {
 }
 
 export async function generateMetadata({ params }: PageProps) {
-  const { locale, id } = params;
+  const { locale, id } = await params;
   const service = await getServiceByIdByLocale(id, locale);
 
   if (!service || !service.id || !service.name) return {};
@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: PageProps) {
   });
 }
 export default async function ServicePage({ params }: PageProps) {
-  const { locale, id } = params;
+  const { locale, id } = await params;
   const t = await getTranslations("header");
   const service = await getServiceByIdByLocale(id, locale);
 

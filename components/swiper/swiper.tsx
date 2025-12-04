@@ -19,7 +19,7 @@ export default function SwiperWithSidebar({
   Sliderdata: slidersData[];
 }) {
   return (
-    <div className="    w-full px-10 md:px-0 flex flex-col md:flex-row items-center md:items-center  justify-center min-h-screen md:min-h-0 mf">
+    <div className="     w-full px-7 md:px-0 flex flex-col md:flex-row items-center md:items-center  justify-center min-h-screen md:min-h-0 mf">
 
       <div className="hidden md:flex w-full md:w-1/8 h-[350px] md:h-[450px] lg:h-[550px] flex-col items-center justify-center text-white font-bold text-xl">
         <div className="w-px bg-[#e1b261] h-20 rounded-full mb-6" />
@@ -63,10 +63,10 @@ export default function SwiperWithSidebar({
                 </div>
 
  <div className="w-full md:w-3/8 h-auto md:h-full flex flex-col justify-center items-center md:items-start pr-3 text-white order-1 md:order-2 mt-4 md:mt-0">
-  <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[64px] font-bold text-center md:text-left break-words whitespace-normal max-w-full">
+  <h2 className=" our-services-header  md:text-start!  text-3xl sm:text-4xl md:text-5xl lg:text-[64px] font-bold text-center  wrap-break-words whitespace-normal max-w-full">
     {slide.title}
   </h2>
-  <p className="text-base sm:text-lg md:text-lg opacity-80 text-center md:text-left break-words whitespace-normal max-w-full">
+  <p className="our-services-header    md:text-start!   text-base sm:text-lg md:text-lg opacity-80 text-center wrap-break-words whitespace-normal max-w-full">
     {slide.description}
   </p>
   <Link href={slide.button_link}>

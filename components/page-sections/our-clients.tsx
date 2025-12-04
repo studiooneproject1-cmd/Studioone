@@ -22,10 +22,10 @@ export default function OurClients({ clientsData }: OurClientsProps) {
           px-4 sm:px-10 md:px-20 lg:px-32
         "
       >
-        <div className="flex flex-col items-center text-center">
-          
+        <div className="flex flex-col items-center text-center w-full">
+
           <h2
-            className="
+            className=" our-services-header 
               text-lg sm:text-xl md:text-2xl
               font-bold mb-6 sm:mb-8 md:mb-10
               text-[#e1b261]
@@ -34,17 +34,20 @@ export default function OurClients({ clientsData }: OurClientsProps) {
             {t("title")}
           </h2>
 
+          {/* Subtitle (Now guaranteed NEVER to overflow) */}
           <h2
             className="
+            our-services-header
               text-sm sm:text-lg md:text-xl
               font-bold opacity-50
               mb-6 sm:mb-8 md:mb-10
+              w-full max-w-full 
+              break-all whitespace-normal overflow-hidden
             "
           >
             {t("subtitle")}
           </h2>
 
-          {/* Clients list is assumed responsive; if not I can fix it too */}
           <Clients clientsData={clientsData} />
         </div>
       </Section>

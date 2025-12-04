@@ -35,8 +35,8 @@ const CategoriesSection: React.FC<CategoriesSectionProps> = ({ categories }) => 
     <div className="max-w-6xl mx-auto px-4">
 
       <div className="text-center mb-12">
-        <h1 className="text-xl text-[#e1b261] font-bold our-services-header">{t("title")}</h1>
-        <h2 className="text-4xl font-semibold mt-2 our-services-header">{t("subtitle")}</h2>
+        <h1 className="text-xl text-[#e1b261] font-bold our-services-header p-5">{t("title")}</h1>
+        <h2 className="text-4xl font-semibold mt-2 our-services-header ">{t("subtitle")}</h2>
       </div>
 
      

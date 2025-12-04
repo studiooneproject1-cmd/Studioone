@@ -14,7 +14,7 @@ export default function MissionVisionR({ mission, vision }: visionMissionTextPro
     <div>
       <Section
         image={Image2.src}
-        className="pt-32 pb-32 flex flex-col justify-between gap-8 px-4 md:px-8"
+        className="pt-32 pb-32 flex flex-col justify-between gap-8 px-10 md:px-8"
       >
         <div className="w-full md:w-[80%] flex flex-col gap-12 mx-auto">
 

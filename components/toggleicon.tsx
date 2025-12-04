@@ -66,7 +66,7 @@ export default function SlideSidebar() {
       {isOpen && (
         <div
           onClick={() => setOpen(false)}
-          className="fixed inset-0 bg-black/40 z-30"
+          className="fixed inset-0  z-30"
         ></div>
       )}
     </>

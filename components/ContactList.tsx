@@ -28,7 +28,7 @@ export default async function ContactList() {
   ];
 
   return (
-    <div className="flex flex-col justify-center items-center w-[80%] mx-auto">
+    <div className="flex flex-col justify-center items-center w-[90%] mx-auto">
       <ProcessSectionWrapper>
         {Contacts.map((contact) => (
           <ContactCard

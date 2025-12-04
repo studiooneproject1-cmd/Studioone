@@ -45,7 +45,7 @@ export default async function Page({ params }: PageProps) {
         <OurServices ServicesData={ServicesData} />
       </Section>
 
-      <Section image={Image1.src} className="py-12 px-9 md:px-32 md:py-24">
+      <Section image={Image1.src} className="py-12 px-7 md:px-32 md:py-24">
         <OurVision vision={vision} />
       </Section>
 

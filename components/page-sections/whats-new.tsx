@@ -15,8 +15,8 @@ export default function WhatsNew({ project }: WhatsNewProps) {
   return (
     <Section image={Image2.src} className="py-24 px-8 md:px-32">
       <div className="flex flex-col items-center w-full">
-        <h1 className="text-xl font-bold text-[#e1b261]">{t("title")}</h1>
-        <h2 className="text-4xl text-center md:text-left mt-2">{t("subtitle")}</h2>
+        <h1 className="text-xl font-bold text-[#e1b261] our-services-header ">{t("title")}</h1>
+        <h2 className="text-4xl text-center md:text-left mt-2  our-services-header ">{t("subtitle")}</h2>
 
         <div className="mt-12 flex flex-wrap justify-center gap-8 w-full">
           {recentProjects.map((item) => (
