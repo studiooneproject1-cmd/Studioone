@@ -23,7 +23,7 @@ export default function OurClients({ clientsData }: OurClientsProps) {
         "
       >
         <div className="flex flex-col items-center text-center w-full">
-
+          
           <h2
             className="our-services-header text-lg sm:text-xl md:text-2xl font-bold mb-6 sm:mb-8 md:mb-10 text-[#e1b261]"
           >
@@ -36,9 +36,8 @@ export default function OurClients({ clientsData }: OurClientsProps) {
             {t("subtitle")}
           </h2>
 
-          <div className="w-full flex overflow-x-auto gap-4">
-            <Clients clientsData={clientsData} />
-          </div>
+          {/* ⭐ السلايدر الآن يعمل بدون أي div يسبب مشاكل */}
+          <Clients clientsData={clientsData} />
 
         </div>
       </Section>
