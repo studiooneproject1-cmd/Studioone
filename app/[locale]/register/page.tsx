@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 import { signIn } from "next-auth/react";
 import Link from "next/link";
 import Image from "next/image";
+import { notFound } from "next/navigation";
 import {
   getRegisterSchema,
   type RegisterFormType,
@@ -14,6 +15,8 @@ import Logo from "@/public/WhiteLogo.png";
 import { toast } from "sonner";
 
 const RegisterPage = () => {
+   notFound();
+  return null; 
   const router = useRouter();
   const registerSchema = getRegisterSchema();
 

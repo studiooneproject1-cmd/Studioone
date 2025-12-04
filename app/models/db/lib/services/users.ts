@@ -2,7 +2,7 @@ import { pool } from "../index";
 import bcrypt from "bcrypt";
 import jwt, { Secret } from "jsonwebtoken";
 
-import { newUser,  DBUser, userInfo, userDetails } from "@/types/index";
+import { newUser, DBUser, userInfo, userDetails } from "@/types/index";
 const hashPassword = async (password: string) => {
   const hashedPassword = await bcrypt.hash(password, 10);
   return hashedPassword;
@@ -18,14 +18,11 @@ export const register = async (newUser: newUser) => {
     newUser.email,
   ]);
 
- 
-  
   if (checkEmail.rows.length > 0) {
-     console.log("inwds");
+    console.log("inwds");
     return { data: null, message: "The Email Is Already Exist" };
-    
   } else {
-     console.log("inwwwwwds",newUser);
+    console.log("inwwwwwds", newUser);
     const result = await pool.query<userDetails>(
       "insert into users (first_name, last_name, email, password) values ($1,$2,$3,$4) returning *",
       [
@@ -35,7 +32,7 @@ export const register = async (newUser: newUser) => {
         await hashPassword(newUser.password),
       ]
     );
-console.log("inwwwwwds",result);
+    console.log("inwwwwwds", result);
     return { message: "registered successfully", data: result.rows };
   }
 };
@@ -66,7 +63,7 @@ export const login = async (userInfo: userInfo) => {
           name: dbUser.first_name,
         },
         process.env.NEXTAUTH_SECRET as Secret,
-        { expiresIn: "30d" }
+        { expiresIn: "10d" }
       );
       return {
         id: dbUser.id,
@@ -79,4 +76,3 @@ export const login = async (userInfo: userInfo) => {
     }
   }
 };
-

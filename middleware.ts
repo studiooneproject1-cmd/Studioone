@@ -38,9 +38,10 @@ const isOnAuthRoute = authRoutes.some(route => pathWithoutLocale.startsWith(rout
       new URL(`/?callbackURL=${encodedCallbackURL}`, req.url)
     );
   }
+  
 
   if (isOnAuthRoute && isLoggedIn) {
-    return NextResponse.redirect(new URL("/", req.url));
+    return NextResponse.redirect(new URL("/admin/dashboard", req.url));
   }
 
   if (isAdminRoutes && isLoggedIn && role !== "admin") {
