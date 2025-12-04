@@ -24,13 +24,7 @@ export default async function page({ params }: PageProps) {
 
   return (
     <div>
-      <Header
-        title={t("aboutUsTitle")}
-        description={t("aboutUsDescription")}
-        link="/about"
-        homeText={t("home")}
-      />
-      <AboutUs about={about} />
+    
       <OurClients clientsData={clientsData} />
       <ContactUs />
     </div>
