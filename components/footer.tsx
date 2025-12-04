@@ -53,7 +53,7 @@ export default function Footer() {
 
           <div className="flex flex-col flex-1 space-y-4 items-center md:items-start text-center md:text-left">
             <Image src={WhiteLogo} alt="WhiteLogo" className="z-0" />
-            <p className="text-[20px] font-semibold">{t("ctaText")}</p>
+            <p className="text-[20px] md:text-start!   our-services-header  font-semibold">{t("ctaText")}</p>
              <Link href="/contact">
             <ArrowButton>
              {t("contactUs")}
@@ -91,10 +91,10 @@ export default function Footer() {
 
             {/* Social icons */}
             <div className="flex gap-4 mt-4">
-              <Link href="#" className="text-white hover:text-[#e1b261] transition-all hover:scale-110 duration-500">
+              <Link href="https://web.facebook.com/Studioone.jo" className="text-white hover:text-[#e1b261] transition-all hover:scale-110 duration-500">
                 <FontAwesomeIcon icon={faFacebookF} className="w-6 h-6 no-flip" />
               </Link>
-              <Link href="#" className="text-white hover:text-[#e1b261] transition-all hover:scale-110 duration-500">
+              <Link href="https://www.instagram.com/studio.1.design" className="text-white hover:text-[#e1b261] transition-all hover:scale-110 duration-500">
                 <FontAwesomeIcon icon={faInstagram} className="w-6 h-6 no-flip" />
               </Link>
             </div>

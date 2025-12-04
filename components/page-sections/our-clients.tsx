@@ -17,38 +17,29 @@ export default function OurClients({ clientsData }: OurClientsProps) {
       <Section
         image={Image1.src}
         className="
-          h-[40vh] sm:h-[45vh] md:h-[50vh]
-          py-10 sm:py-16 md:py-24
+          min-h-[40vh] sm:min-h-[45vh] md:min-h-[50vh]
+          py-6 sm:py-16 md:py-24
           px-4 sm:px-10 md:px-20 lg:px-32
         "
       >
         <div className="flex flex-col items-center text-center w-full">
 
           <h2
-            className=" our-services-header 
-              text-lg sm:text-xl md:text-2xl
-              font-bold mb-6 sm:mb-8 md:mb-10
-              text-[#e1b261]
-            "
+            className="our-services-header text-lg sm:text-xl md:text-2xl font-bold mb-6 sm:mb-8 md:mb-10 text-[#e1b261]"
           >
             {t("title")}
           </h2>
 
-          {/* Subtitle (Now guaranteed NEVER to overflow) */}
           <h2
-            className="
-            our-services-header
-              text-sm sm:text-lg md:text-xl
-              font-bold opacity-50
-              mb-6 sm:mb-8 md:mb-10
-              w-full max-w-full 
-              break-all whitespace-normal overflow-hidden
-            "
+            className="our-services-header text-sm sm:text-lg md:text-xl font-bold opacity-50 mb-6 sm:mb-8 md:mb-10 break-words max-w-full"
           >
             {t("subtitle")}
           </h2>
 
-          <Clients clientsData={clientsData} />
+          <div className="w-full flex overflow-x-auto gap-4">
+            <Clients clientsData={clientsData} />
+          </div>
+
         </div>
       </Section>
     </div>

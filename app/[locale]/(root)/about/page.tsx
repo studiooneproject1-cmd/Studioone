@@ -31,7 +31,7 @@ export default async function page({ params }: PageProps) {
         homeText={t("home")}
       />
       <AboutUs about={about} />
- 
+      <OurClients clientsData={clientsData} />
       <ContactUs />
     </div>
   );

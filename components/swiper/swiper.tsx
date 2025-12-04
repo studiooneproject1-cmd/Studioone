@@ -13,6 +13,15 @@ import type { slidersData } from "@/types/index";
 import Image from "next/image";
 import Link from "next/link";
 
+
+
+
+
+
+
+
+
+
 export default function SwiperWithSidebar({
   Sliderdata,
 }: {
@@ -23,15 +32,18 @@ export default function SwiperWithSidebar({
 
       <div className="hidden md:flex w-full md:w-1/8 h-[350px] md:h-[450px] lg:h-[550px] flex-col items-center justify-center text-white font-bold text-xl">
         <div className="w-px bg-[#e1b261] h-20 rounded-full mb-6" />
-
+  <Link href="https://web.facebook.com/Studioone.jo">
         <FontAwesomeIcon
           icon={faFacebookF}
           className="mb-4 text-md cursor-pointer hover:text-[#e1b261] duration-300 transition-all no-flip"
         />
+        </Link>
+          <Link href="https://www.instagram.com/studio.1.design">
         <FontAwesomeIcon
           icon={faInstagram}
           className="mb-4 text-md cursor-pointer hover:text-[#e1b261] duration-300 transition-all no-flip"
         />
+        </Link>
       </div>
 
       <div className="w-full md:w-[85vw] h-screen md:h-[450px] lg:h-[550px] relative">

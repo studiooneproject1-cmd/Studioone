@@ -22,7 +22,7 @@ export default async function ProjectHeader({
     <div>
       <Section
         image={Image1.src}
-        className="flex items-center justify-center p-28"
+        className="flex items-center justify-center md:p-28 px-8 py-28"
       >
         <div className="text-white text-center flex flex-col items-center max-w-lg">
           <h1 className="text-5xl font-bold mb-4">

@@ -29,10 +29,10 @@ export default async function ServicesPage({ params }: PageProps) {
         link="/services"
         homeText={t("home")}
       />
-      <Section image={Image2.src} className="h-screen py-24 px-8">
+      <Section image={Image2.src} className="py-12 px-3 md:px-32 md:py-24">
         <OurServices ServicesData={ServicesData} />
       </Section>
-      <Section image={Image2.src} className="py-12 px-9 md:px-32 md:py-24">
+      <Section image={Image2.src} className="py-12 px-3 md:px-32 md:py-24">
         <OurProcess />
       </Section>
       <ContactUs />

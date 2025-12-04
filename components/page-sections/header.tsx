@@ -15,7 +15,7 @@ export default function Header({ title, description, link, homeText }: HeaderPro
     <div>
    <Section
   image={Image1.src}
-  className="flex items-center justify-center md:p-28 px-8 py-28 relative z-[1]"
+  className="flex items-center justify-center md:p-28 px-8 py-28 relative z-1"
 >
 
         <div className="text-white text-center flex flex-col items-center max-w-lg">
