@@ -15,8 +15,8 @@ import Logo from "@/public/WhiteLogo.png";
 import { toast } from "sonner";
 
 const RegisterPage = () => {
-   notFound();
-  return null; 
+  
+ 
   const router = useRouter();
   const registerSchema = getRegisterSchema();
 
